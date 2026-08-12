@@ -119,6 +119,19 @@ working prompt, the output structure it produces, and a quality bar for judging 
 | 59 | [Key Message Summary](docs/6-communicate/59-key-message-summary.md) | Reduce the strategy to messages that survive retelling |
 | 60 | [Next Steps](docs/6-communicate/60-next-steps.md) | Close with owned, dated, unambiguous commitments |
 
+## Writing your own tools — the Gauntlet
+
+Every prompt here was specified, attacked, repaired, and tested before it went in. That method is
+now packaged so you can hold new tools to the same bar:
+
+- **[The prompt-writing app](app/index.html)** — open the file in a browser. It walks the seven
+  stages, holds the state, enforces the ship gate, and exports a finished library entry as
+  markdown. No install, no build, no network.
+- **[The `prompt-gauntlet` skill](.claude/skills/prompt-gauntlet/SKILL.md)** — the same method for
+  Claude to run itself. Copy the folder into any project's `.claude/skills/` to reuse it.
+- **[The method, explained](docs/framework/README.md)** — the seven stages, the nine attack
+  lenses, and why the ship gate counts things instead of scoring them.
+
 ## Conventions used in every file
 
 - **Prompts are written for pasting.** Everything inside the fenced block goes to the model as-is;
