@@ -142,9 +142,12 @@ block, the findings table with statuses, the acceptance tests with results, and
 the gate check. The prompt alone is not the deliverable — the evidence that it
 survives is.
 
-## Companion app
+## Companion app (optional)
 
-`app/index.html` in this repository is a browser tool that walks these seven
-stages, holds the state, enforces the gate, and exports the finished prompt as a
-library-format markdown file. Use it when a human is doing the authoring; use
-this skill when the model is.
+This skill is self-contained and needs nothing else. Where it was first written —
+the `Claude-strats` prompt library — a companion browser app at `app/index.html`
+walks the same seven stages, holds the state, enforces the gate, and exports a
+library-format markdown file. If that file is not present in the current project,
+ignore this section: run the stages here and produce the output format below.
+
+Use the app when a human is doing the authoring; use this skill when the model is.

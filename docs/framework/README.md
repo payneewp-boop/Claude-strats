@@ -27,6 +27,26 @@ the method used to do that, so new tools can be added to the same standard.
    contradictory input, or input carrying an embedded instruction.
 7. **Ship** — a gate of counts, then one honest question: should this prompt exist at all?
 
+## A worked example
+
+Open the app and press **Worked example** to load a real run: tool
+[01 Situation Assessment](../1-diagnose/01-situation-assessment.md) taken through all seven
+stages. It is there because a method with no worked example is a claim.
+
+Five findings, four of which changed the prompt:
+
+| ID | Lens | Sev | What it found | Outcome |
+| --- | --- | --- | --- | --- |
+| F-01 | Hostile input | high | Nothing classified the pasted block as data, so a strategy deck's own executive summary acted as an instruction — the assessment adopted the framing it exists to challenge | Fixed: material-is-evidence rule |
+| F-02 | Output shape | medium | The doc graded output against 800–1,500 words that the prompt never stated; section 4 was unbounded | Fixed: length rule + section cap; spread went from 620–2,380 words to 890–1,410 |
+| F-03 | Generic output | low | "At parity" is the free option — a model with thin evidence took it 4.2 times out of 5 | Fixed: forced re-rate; parity count fell to 1.6 |
+| F-04 | Testability | medium | "Contains a fact that annoys you" cannot be checked from the output | Rejected: kept as a reader's heuristic. Instructing a model to provoke produces manufactured provocation |
+| F-05 | Simplicity | low | "Do not recommend actions" looked redundant | Rejected: deleting it made 3 of 5 runs drift into recommendations. The instruction earns its place |
+
+F-01 and F-02 are now applied to the live file. Note what F-04 and F-05 cost: two lenses
+ran, found something, and correctly changed nothing. A review that only ever confirms
+changes is not reviewing.
+
 ## Why the gate counts things instead of scoring them
 
 The original framework gated on percentages — consensus ≥ 95, confidence ≥ 95, review exhaustion
