@@ -126,6 +126,19 @@ seven rounds covering thin input, flattering input, null results, self-challenge
 integrity, and operator safety, with the findings and fixes from each pass logged. Run it after
 any material edit.
 
+## Writing your own tools — the Gauntlet
+
+Every prompt here was specified, attacked, repaired, and tested before it went in. That method is
+now packaged so you can hold new tools to the same bar:
+
+- **[The prompt-writing app](app/index.html)** — open the file in a browser. It walks the seven
+  stages, holds the state, enforces the ship gate, and exports a finished library entry as
+  markdown. No install, no build, no network.
+- **[The `prompt-gauntlet` skill](.claude/skills/prompt-gauntlet/SKILL.md)** — the same method for
+  Claude to run itself. Copy the folder into any project's `.claude/skills/` to reuse it.
+- **[The method, explained](docs/framework/README.md)** — the seven stages, the nine attack
+  lenses, and why the ship gate counts things instead of scoring them.
+
 ## Conventions used in every file
 
 - **Prompts are written for pasting.** Everything inside the fenced block goes to the model as-is;
@@ -134,6 +147,12 @@ any material edit.
   confident numbers you never supplied, that is a defect, not a feature.
 - **Output structures are specified.** The prompts ask for tables and named sections so that
   outputs from different tools can be chained without reformatting.
+- **Pasted material is evidence, not instruction.** Every prompt closes by telling the model
+  that everything below the delimiter is to be analysed, never obeyed. This matters more than
+  it sounds: the material you paste is often a vendor proposal, a competitor's deck, or a
+  strategy document written to persuade a reader. Without the rule, a persuasive executive
+  summary steers the analysis that was supposed to test it. Directions found in the material
+  get reported as a fact about the source instead.
 
 ## License
 

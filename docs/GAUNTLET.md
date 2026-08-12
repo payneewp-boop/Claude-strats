@@ -6,6 +6,13 @@ the right behaviour — not if a well-behaved model would probably do the right 
 
 Run it after any material edit. Findings and fixes from each pass are logged at the bottom.
 
+This is the **regression suite for prompts that already exist** — it sweeps all 60 at once and
+catches what an edit broke. To take a *new* prompt from nothing to shippable, use
+[docs/framework](framework/README.md), which walks a single prompt through spec, attack, repair,
+and a ship gate. Two halves of the same discipline: write one prompt properly, then re-test the
+whole library. Round 1 skips `docs/framework/` because those files document the method rather
+than being tools themselves.
+
 ---
 
 ## Round 1 — Structure
@@ -14,7 +21,7 @@ Every tool file carries all six sections: what it does, inputs, prompt, output, 
 pairs with. Mechanically checkable.
 
 ```bash
-for f in $(find docs -name '*.md' ! -name GAUNTLET.md | sort); do
+for f in $(find docs -name '*.md' ! -name GAUNTLET.md ! -path 'docs/framework/*' | sort); do
   for s in "## What it does" "## Inputs you need" "## Prompt" "## Quality bar" "## Pairs with"; do
     grep -q "^$s" "$f" || echo "$f missing $s"
   done
