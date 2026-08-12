@@ -10,7 +10,7 @@ the work starts. Without this, benefits are claimed rather than delivered.
 
 ## Inputs you need
 
-- The business case with its benefit claims ([23](23-business-case-builder.md))
+- The business case with its benefit claims ([23](../3-choose-strategy/23-business-case-builder.md))
 - Current financial reporting structure: which lines, which cost centres, which reports
 - Baseline data for every metric a benefit will be measured against
 - Who owns each affected P&L line
