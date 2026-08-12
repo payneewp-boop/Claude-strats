@@ -69,6 +69,11 @@ Produce:
    you doing about it," who answers? Name them. If nobody can answer for the whole, the
    programme has no owner.
 
+9. WHERE THIS MAP WILL FAIL IN PRACTICE
+   Name the ownership assignment most likely to break — an owner who accepts accountability
+   in the room but lacks the standing to enforce it, or an interface whose named owner cannot
+   compel either side. State what will actually happen when it breaks.
+
 Rules:
 - Committees cannot be accountable. Name individuals by role.
 - Every owner needs the authority test applied — no exceptions.

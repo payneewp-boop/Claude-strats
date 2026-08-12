@@ -33,7 +33,9 @@ Produce:
    Explicitly state which variables you rejected and why.
 
 2. SEGMENTS
-   Define 4–7 segments. For each:
+   Define 4–7 segments — unless the evidence supports fewer, in which case define fewer and
+   say what you looked for and did not find. A market split into segments that behave
+   identically is worse than an honest three. For each:
    - NAME: descriptive of behaviour, not of demographics ("deadline-driven replacers", not
      "mid-market manufacturers")
    - SIZE: number of customers and revenue, absolute and % of total

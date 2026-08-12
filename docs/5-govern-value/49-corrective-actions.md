@@ -72,6 +72,11 @@ Produce:
    The next option in sequence, and the point at which we conclude the objective is not
    achievable and change the plan rather than the effort.
 
+10. THE CASE FOR THE OPPOSITE RESPONSE
+    You have recommended one response. Argue the strongest case for its opposite — if you
+    recommended intensifying, argue for stopping; if stopping, argue for persistence. State
+    what evidence decides between them and whether we currently have it.
+
 Rules:
 - Do not recommend intensifying an approach that the diagnosis says is wrong.
 - Every corrective action needs a date by which its effect should be visible.

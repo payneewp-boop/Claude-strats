@@ -58,6 +58,11 @@ Produce:
    carried forward from an earlier document without re-checking. These are where the fact
    base will break.
 
+7. WHERE THIS FACT BASE IS MOST LIKELY WRONG
+   Name the three facts that most downstream analysis will rest on, and for each state how
+   confident you are and what would falsify it. Then name the single fact you would bet
+   against if forced. A fact base is trusted precisely because it says where it is weak.
+
 Rules:
 - Absolutely no invented numbers. If a figure is not in the material, it goes in section 5.
 - Where you must estimate to make a derived fact work, label it "ESTIMATE" and show the

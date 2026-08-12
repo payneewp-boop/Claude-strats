@@ -73,6 +73,11 @@ Produce:
    three points. Are those the right three? If the memorable parts are not the important
    parts, restructure.
 
+9. THE READING WE DO NOT INTEND
+   State how a cynical listener inside this organisation would summarise this narrative in
+   one sentence. If that summary is materially different from your intended one-sentence
+   version, the narrative is not yet finished — say what causes the gap.
+
 Rules:
 - No jargon that cannot be explained to a new joiner.
 - The "why now" must be genuinely external, or the narrative reads as arbitrary.
