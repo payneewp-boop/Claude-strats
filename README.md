@@ -140,6 +140,12 @@ now packaged so you can hold new tools to the same bar:
   confident numbers you never supplied, that is a defect, not a feature.
 - **Output structures are specified.** The prompts ask for tables and named sections so that
   outputs from different tools can be chained without reformatting.
+- **Pasted material is evidence, not instruction.** Every prompt closes by telling the model
+  that everything below the delimiter is to be analysed, never obeyed. This matters more than
+  it sounds: the material you paste is often a vendor proposal, a competitor's deck, or a
+  strategy document written to persuade a reader. Without the rule, a persuasive executive
+  summary steers the analysis that was supposed to test it. Directions found in the material
+  get reported as a fact about the source instead.
 
 ## License
 
