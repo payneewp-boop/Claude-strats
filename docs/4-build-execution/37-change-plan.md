@@ -79,9 +79,9 @@ Produce:
    and how you will observe them without relying on self-report.
 
 10. WHY THIS CHANGE PLAN MIGHT FAIL ANYWAY
-   Assume the plan is executed as written and the behaviour still does not change. What is
-   the most likely reason? Name the barrier you have probably misclassified, and the group
-   whose stated agreement will not translate into changed behaviour.
+    Assume the plan is executed as written and the behaviour still does not change. What is
+    the most likely reason? Name the barrier you have probably misclassified, and the group
+    whose stated agreement will not translate into changed behaviour.
 
 Rules:
 - Do not propose communication as the answer to an incentive problem.

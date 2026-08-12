@@ -68,9 +68,9 @@ Produce:
    it from memory.
 
 10. WHAT WAS AGREED IN THE ROOM BUT WILL NOT HAPPEN
-   Name the action on this list least likely to be done by its date, and why — no capacity,
-   no real commitment, or a dependency nobody owns. Better to name it now than to discover it
-   at the checkpoint.
+    Name the action on this list least likely to be done by its date, and why — no capacity,
+    no real commitment, or a dependency nobody owns. Better to name it now than to discover it
+    at the checkpoint.
 
 Rules:
 - Every action has one named owner. Shared ownership means no ownership.

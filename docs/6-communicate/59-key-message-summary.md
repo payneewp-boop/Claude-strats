@@ -78,6 +78,9 @@ Rules:
 - Three messages. Not five, not seven.
 - No message that requires a caveat to be true.
 - Every message must be sayable in one breath, in plain words.
+- Every supporting fact must come from the material, with its source. Invented proof is the
+  fastest way to lose an audience that can check it, and messages travel further than
+  their corrections.
 
 MATERIAL:
 [PASTE STRATEGY, AUDIENCES, RETELLING CHAIN, CURRENT BELIEFS, SENSITIVITIES]

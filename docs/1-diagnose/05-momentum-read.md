@@ -66,6 +66,8 @@ Rules:
   but cannot confirm it.
 - With fewer than 8 periods, state that the momentum read is directional only.
 - Do not confuse a high level with good momentum, or a low level with bad momentum.
+- Attribute an inflection to a cause only where the material supports it. Where you are
+  reasoning from timing alone, write "Inference:" and say what would confirm it.
 
 DATA:
 [PASTE TIME SERIES, NOTING PERIODS AND ANY KNOWN ONE-OFFS]

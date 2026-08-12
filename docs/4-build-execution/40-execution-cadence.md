@@ -79,9 +79,9 @@ Produce:
    When and how the cadence itself gets reviewed and pruned. Cadences accumulate.
 
 10. HOW THIS CADENCE DEGRADES
-   Cadences decay predictably: packs grow, forums add attendees, decisions drift upward, and
-   status replaces decision. State which of your forums will degrade first, what the early
-   sign is, and what structural feature would resist it.
+    Cadences decay predictably: packs grow, forums add attendees, decisions drift upward, and
+    status replaces decision. State which of your forums will degrade first, what the early
+    sign is, and what structural feature would resist it.
 
 Rules:
 - No forum without a decision right.

@@ -78,6 +78,8 @@ Rules:
 - Every option must be one a competent executive team could actually execute.
 - The baseline option gets the same rigour as the exciting ones, including the cost of
   continued decline where the diagnosis implies it.
+- Investment and return figures must be derived from stated assumptions, shown alongside the
+  number. An option costed from nothing is not comparable to one costed from evidence.
 
 MATERIAL:
 [PASTE DIAGNOSIS, MARKET ANALYSIS, CONSTRAINTS, AND THE CURRENTLY FAVOURED OPTION]

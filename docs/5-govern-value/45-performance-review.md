@@ -74,9 +74,9 @@ Produce:
    Table: action | owner | date | expected effect. Few and specific.
 
 10. THE FLATTERING READ WE SHOULD DISTRUST
-   Name the part of this review most likely to be self-serving: an external factor credited
-   for a shortfall, or execution credited for a result the market delivered. Restate that
-   section as an unsympathetic outsider would, and say which version you believe.
+    Name the part of this review most likely to be self-serving: an external factor credited
+    for a shortfall, or execution credited for a result the market delivered. Restate that
+    section as an unsympathetic outsider would, and say which version you believe.
 
 Rules:
 - Every variance gets decomposed. "Below plan due to challenging market conditions" is not

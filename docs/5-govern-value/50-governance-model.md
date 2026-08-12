@@ -79,9 +79,9 @@ Produce:
     For each, the structural feature intended to prevent it.
 
 11. HOW THIS MODEL FAILS QUIETLY
-   The visible failure of governance is paralysis. The quiet failure is a body that meets,
-   reviews, and approves without ever changing an outcome. State how you would tell, twelve
-   months in, which of the two this design has produced.
+    The visible failure of governance is paralysis. The quiet failure is a body that meets,
+    reviews, and approves without ever changing an outcome. State how you would tell, twelve
+    months in, which of the two this design has produced.
 
 Rules:
 - Every forum needs decision authority. Advisory-only forums should be replaced by written

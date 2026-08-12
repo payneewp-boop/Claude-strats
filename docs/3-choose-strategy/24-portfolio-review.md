@@ -82,6 +82,9 @@ Rules:
 - Do not assign GROW to more than a third of the portfolio unless the capital table proves
   it is affordable.
 - Strategic rationales for holding a value-destroying unit must be quantified, not asserted.
+- Every ratio you compute — ROIC, share, cash generation — must trace to figures supplied.
+  Where capital employed or its equivalent is missing for a unit, say so rather than
+  substituting an assumed base; a fabricated denominator silently reorders the whole table.
 
 MATERIAL:
 [PASTE UNIT FINANCIALS, MARKET POSITIONS, CAPITAL HISTORY, STRATEGIC RATIONALES]
