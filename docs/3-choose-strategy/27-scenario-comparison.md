@@ -72,6 +72,11 @@ Produce:
    the pre-agreed action to take at that point. Write these as "if we see X by date Y,
    we do Z."
 
+9. WHERE THE SCENARIO FRAME ITSELF FAILS
+   The two uncertainties you chose determine every conclusion here. State what a third
+   uncertainty, excluded from the frame, would do to these rankings if it resolved adversely
+   — and whether any scenario you built is actually implausible on closer inspection.
+
 Rules:
 - Scenarios must not be the same future at three levels of intensity.
 - Probabilities must be stated and sum to 1. Vagueness here defeats the exercise.

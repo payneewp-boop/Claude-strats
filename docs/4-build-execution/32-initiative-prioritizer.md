@@ -73,6 +73,11 @@ Produce:
    bottleneck resources and state which initiatives will actually queue behind each other
    regardless of what the plan says.
 
+9. THE RANKING MOST LIKELY TO BE WRONG
+   Name the initiative just below the capacity line that has the strongest claim to be above
+   it, and the one just above with the weakest claim to its place. State what evidence would
+   swap them. Then: whose initiative is protected by sponsorship rather than by score?
+
 Rules:
 - Sunk cost is irrelevant to whether to continue. State it for the record and then ignore it.
 - Any initiative without a named accountable owner goes below the line automatically.

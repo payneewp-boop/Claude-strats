@@ -56,6 +56,11 @@ Produce:
    artefact of a small base, and should not be read as momentum. Be specific about which
    figures you are discounting and why.
 
+7. THE OPPOSITE READ
+   State the strongest case that this momentum verdict is wrong — what a sceptic looking at
+   the same series would conclude and which data points support them. If that case is weak,
+   say why. If it is not weak, downgrade your verdict accordingly.
+
 Rules:
 - Adjust for known one-offs where the material identifies them; flag where you suspect one
   but cannot confirm it.

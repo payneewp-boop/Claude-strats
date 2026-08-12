@@ -67,6 +67,11 @@ Produce:
    contractor availability, vendor lead times, and the proportion of time contributors can
    actually give. These assumptions are where resource plans go wrong.
 
+9. THE ESTIMATE MOST LIKELY TO BE WRONG
+   Name the single resource assumption whose failure would most damage the plan, and state
+   the evidence for it. Then argue the pessimistic case: if productivity, hiring speed, and
+   available time are each 25% worse than assumed, what does this plan actually deliver?
+
 Rules:
 - Use fully loaded internal costs, not marginal cash cost. Internal time is not free.
 - Include ramp time for every new person, internal transfer included.

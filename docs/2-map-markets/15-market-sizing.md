@@ -65,6 +65,12 @@ Produce:
    and why your number is higher or lower. Do not defer to a published number just because
    it is published.
 
+9. THE CASE THAT THIS MARKET IS SMALLER
+   Argue against your own number. Build the most credible case that the realistic
+   opportunity is materially smaller than your base — narrower definition, lower penetration,
+   slower share gain, more substitution. State what that case would require to be true, and
+   whether the evidence rules it out.
+
 Rules:
 - Every factor needs a source or an explicit "assumed, based on X."
 - Never present a single number without a range.

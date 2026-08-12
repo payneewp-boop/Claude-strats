@@ -68,6 +68,11 @@ Produce:
    Table: issue | action | owner | date | expected effect on the benefit position.
    Include the option of stopping a workstream whose benefits have proven illusory.
 
+9. THE CASE THAT THIS IS WORSE THAN REPORTED
+   Argue against your own scorecard. Which delivered benefits would not survive an
+   independent audit — attribution too generous, baseline favourable, timing pulled forward,
+   or a cost quietly excluded? State the defensible worst-case value position.
+
 Rules:
 - Do not rebaseline to make performance look better. Report against the approved case, and
   show any change explicitly.

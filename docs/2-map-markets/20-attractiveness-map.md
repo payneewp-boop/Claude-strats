@@ -64,6 +64,11 @@ Produce:
    Which market is currently unattractive but on a trajectory that would make it
    attractive, and what signal would tell you to move? Timing is often the whole decision.
 
+8. THE PLACEMENT MOST LIKELY TO BE WRONG
+   Name the market whose position on this map you would defend least well, and state which
+   score is doing the work. Then: which market would move most if scored by someone with no
+   stake in the answer? Right-to-win scores inflate toward markets people already want.
+
 Rules:
 - Do not let right-to-win scores be aspirational. Score what is true today; capability that
   would need building goes into section 5's build case, not into the score.

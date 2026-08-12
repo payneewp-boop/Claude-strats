@@ -72,6 +72,11 @@ Produce:
    If the timeline had to be cut by a third, what would you drop or parallelise, and what
    risk would that add? Leadership always asks; answer it in advance.
 
+10. THE SEQUENCE MOST LIKELY TO BE WRONG
+   Argue against your own ordering: which workstream have you scheduled late that a sceptic
+   would start immediately, and which early item is consuming capacity before it is needed?
+   State the dependency you are least confident actually exists.
+
 Rules:
 - Do not show work starting in every workstream simultaneously in period one. That is a
   wish, not a sequence.

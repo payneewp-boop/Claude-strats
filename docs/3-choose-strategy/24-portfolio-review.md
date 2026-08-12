@@ -71,6 +71,11 @@ Produce:
    best returns, or to the units with the loudest leaders and the largest legacy? State the
    pattern the data shows.
 
+9. THE ROLE ASSIGNMENT MOST LIKELY TO BE WRONG
+   Name the unit whose role you are least confident in, and argue the opposite assignment
+   fairly. Pay attention to any unit assigned GROW on strategic grounds despite weak returns,
+   and any assigned EXIT whose value to the rest of the group has not been quantified.
+
 Rules:
 - Any unit that has been in "turnaround" for more than two years should be flagged
   explicitly, with the cumulative capital consumed.

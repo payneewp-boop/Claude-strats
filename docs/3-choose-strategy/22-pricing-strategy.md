@@ -70,6 +70,11 @@ Produce:
    Customer reaction, sales force resistance, contractual constraints, channel conflict,
    and the sequence that reduces each. State what you would pilot first.
 
+9. THE CASE AGAINST THIS PRICE
+   Argue the other side: what would have to be true for this price move to lose money, and
+   how far from that are we? Name the customer segment most likely to leave, the competitor
+   most likely to undercut, and the assumed elasticity that carries the most weight.
+
 Rules:
 - Never recommend cost-plus. Cost sets the floor, not the price.
 - State the assumed elasticity explicitly and its evidence base. If there is none, say the
