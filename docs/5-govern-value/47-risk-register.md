@@ -71,6 +71,11 @@ Produce:
    Given how the plan and the environment have changed since the last review, what risk
    should now be on this register and is not?
 
+9. WHAT THIS REGISTER IS STRUCTURALLY BLIND TO
+   Registers over-represent risks that are easy to name and under-represent those that
+   implicate the people maintaining them. State which risk this register would never contain
+   for that reason, and how it should be surfaced instead.
+
 Rules:
 - Every entry needs a named owner and a next review date.
 - Closure requires evidence, not silence.

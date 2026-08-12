@@ -32,6 +32,9 @@ Produce:
    in the plan | evidence for | evidence against | confidence (high/med/low) | source of
    that confidence.
    Aim for 12–25 assumptions. An audit that finds 5 has not looked at the implicit layer.
+   The count is a prompt to look harder, not a quota: never pad the register with
+   assumptions the plan does not actually rest on. If the plan genuinely carries fewer,
+   say so and state where you searched.
 
 2. LOAD-BEARING RANKING
    Score each assumption on two axes:

@@ -9,6 +9,7 @@ the method used to do that, so new tools can be added to the same standard.
 | --- | --- | --- |
 | **The app** | [`app/index.html`](../../app/index.html) | A human is doing the authoring. Open the file in a browser — no install, no build, no network. |
 | **The skill** | [`.claude/skills/prompt-gauntlet/SKILL.md`](../../.claude/skills/prompt-gauntlet/SKILL.md) | A model is doing the authoring. Portable — copy the folder into any project's `.claude/skills/`. |
+| **The regression suite** | [`docs/GAUNTLET.md`](../GAUNTLET.md) | You edited an existing tool and want to know what it broke. That suite sweeps all 60 prompts; this directory takes one prompt from nothing to shippable. Run it after any material edit. |
 | **The archive** | [`gauntlet-original-framework.md`](gauntlet-original-framework.md) | You want the full original framework, including the parts deliberately cut and the measured reason each one went. |
 
 ## The seven stages

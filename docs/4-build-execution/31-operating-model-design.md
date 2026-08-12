@@ -46,8 +46,9 @@ Produce:
    Then: the top two levels of the proposed structure, with each unit's mandate.
 
 4. PROCESSES THAT MATTER
-   Identify the 4–6 processes that carry the strategy — the ones where poor performance
-   directly costs strategic outcomes (e.g. how an opportunity moves from lead to delivery,
+   Identify the processes that carry the strategy — typically 4–6, but report the number the
+   strategy actually depends on — the ones where poor performance directly costs strategic
+   outcomes (e.g. how an opportunity moves from lead to delivery,
    how a product decision is made, how capacity is allocated).
    For each: current state, required state, the specific change, and who owns it.
 

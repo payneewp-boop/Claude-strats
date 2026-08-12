@@ -70,6 +70,11 @@ Produce:
    State when a decision may be revisited and by whom. Without this, decisions are made
    repeatedly and nothing is ever settled. Define the evidence bar for reopening.
 
+9. THE ALLOCATION MOST LIKELY TO BACKFIRE
+   Name the decision right you have assigned that is most likely to produce a bad outcome —
+   authority placed where the information is not, a threshold that will be gamed, or a veto
+   that will be used to delay rather than to protect. State how you would detect it.
+
 Rules:
 - One accountable decider per decision. If it is genuinely a committee decision, say how
   the committee resolves disagreement — vote, chair decides, consensus with a deadline.

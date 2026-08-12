@@ -119,6 +119,13 @@ working prompt, the output structure it produces, and a quality bar for judging 
 | 59 | [Key Message Summary](docs/6-communicate/59-key-message-summary.md) | Reduce the strategy to messages that survive retelling |
 | 60 | [Next Steps](docs/6-communicate/60-next-steps.md) | Close with owned, dated, unambiguous commitments |
 
+## Testing the library
+
+The prompts are kept honest by an adversarial test suite in [docs/GAUNTLET.md](docs/GAUNTLET.md):
+seven rounds covering thin input, flattering input, null results, self-challenge, chain
+integrity, and operator safety, with the findings and fixes from each pass logged. Run it after
+any material edit.
+
 ## Writing your own tools — the Gauntlet
 
 Every prompt here was specified, attacked, repaired, and tested before it went in. That method is

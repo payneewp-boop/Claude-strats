@@ -59,6 +59,11 @@ Produce:
 7. GAPS IN THIS MAP
    What you could not determine from the material, and what source would fill it.
 
+8. HOW THIS MAP COULD BE WRONG
+   Every map imposes a structure that another observer would draw differently. State the one
+   boundary you drew that a competitor in an adjacent step would draw elsewhere, and what
+   their map would make visible that yours hides.
+
 Rules:
 - Describe the market as it is, not as the company's segmentation describes it. If the
   company's internal categories do not match how value actually flows, say so.

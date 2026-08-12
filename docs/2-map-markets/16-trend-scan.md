@@ -29,7 +29,9 @@ Produce:
    (specific, with data) | direction | current stage (emerging / accelerating / mainstream /
    maturing) | when it materially affects us (year) | magnitude of effect on our revenue or
    cost | confidence.
-   Aim for 10–15. Exclude anything you cannot evidence.
+   Exclude anything you cannot evidence, then report however many survive. If that is six,
+   report six — a register padded to a target is the failure mode this tool exists to
+   prevent. If it is fewer than five, state where you searched and found nothing.
 
 2. CERTAINTY × IMPACT
    Plot every trend into four groups:
