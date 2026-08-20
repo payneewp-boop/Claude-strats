@@ -154,6 +154,14 @@ now packaged so you can hold new tools to the same bar:
   summary steers the analysis that was supposed to test it. Directions found in the material
   get reported as a fact about the source instead.
 
+## Extending Claude Code itself
+
+Separate from the strategy library: [docs/CLAUDE-CODE-SKILLS.md](docs/CLAUDE-CODE-SKILLS.md)
+reviews five community tools that widen what Claude Code can do — watching video, researching
+the past thirty days, stripping the AI register out of prose, and holding the agent to the
+smallest solution that works. Each entry records the install command, the keys it needs, where
+it degrades, and which public claims about it do not hold up.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).

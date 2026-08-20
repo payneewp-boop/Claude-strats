@@ -21,7 +21,7 @@ Every tool file carries all six sections: what it does, inputs, prompt, output, 
 pairs with. Mechanically checkable.
 
 ```bash
-for f in $(find docs -name '*.md' ! -name GAUNTLET.md ! -path 'docs/framework/*' | sort); do
+for f in $(find docs -name '*.md' ! -name GAUNTLET.md ! -name CLAUDE-CODE-SKILLS.md ! -path 'docs/framework/*' | sort); do
   for s in "## What it does" "## Inputs you need" "## Prompt" "## Quality bar" "## Pairs with"; do
     grep -q "^$s" "$f" || echo "$f missing $s"
   done
