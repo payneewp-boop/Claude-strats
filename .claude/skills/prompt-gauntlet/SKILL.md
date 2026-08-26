@@ -157,9 +157,10 @@ survives is.
 ## Companion app (optional)
 
 This skill is self-contained and needs nothing else. Where it was first written —
-the `Claude-strats` prompt library — a companion browser app at `app/index.html`
-walks the same seven stages, holds the state, enforces the gate, and exports a
-library-format markdown file. If that file is not present in the current project,
-ignore this section: run the stages here and produce the output format below.
+the `Claude-strats` prompt library — a companion browser app walks the same seven
+stages, holds the state, enforces the gate, and exports a library-format markdown
+file. There it lives at `app/index.html`, relative to the repository root. Copied
+into any other project it will not be present; if it is missing, ignore this
+section and run the stages here, producing the output format below.
 
 Use the app when a human is doing the authoring; use this skill when the model is.
