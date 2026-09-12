@@ -1,6 +1,6 @@
 ---
 name: prompt-gauntlet
-description: Write, harden, and ship a reusable prompt through an adversarial review loop — spec the requirement, draft, generate rival framings, attack it with distinct lenses, repair with verification, test against acceptance criteria, then gate the release. Use whenever someone wants to write a prompt, improve or debug a prompt that is producing weak or inconsistent output, turn a working prompt into a reusable template or library entry, or review someone else's prompt. Triggers on "write a prompt", "improve this prompt", "the prompt isn't working", "make this a template", "prompt review", "harden this prompt", "why is the output generic".
+description: Write, harden, and ship a reusable prompt through an adversarial review loop — spec the requirement, draft, generate rival framings, attack it with distinct lenses, repair with verification, test against acceptance criteria, then gate the release. Use whenever someone wants to write a prompt, improve or debug a prompt that is producing weak or inconsistent output, turn a working prompt into a reusable template or library entry, or review someone else's prompt. Triggers on "write a prompt", "improve this prompt", "the prompt isn't working", "make this a template", "prompt review", "harden this prompt", "why is the output generic". Code and systems go to gauntlet-loop instead, a skill to skill-forge.
 ---
 
 # Prompt Gauntlet
@@ -16,6 +16,18 @@ defect, repair with a stated verification, then check the gate before shipping.
 Use for any prompt meant to be run more than once, handed to someone else, or
 placed in a library. For a one-off throwaway question, skip this — write the
 question.
+
+Pick by the artifact, not by the vocabulary of the request. "Harden this" means
+this file when the thing being hardened is prompt text; `gauntlet-loop` when it
+is code, a schema, or infrastructure; `skill-forge` when it is a skill, a
+command, or an agent definition. That matters more here than it looks, because
+this folder is meant to be copied into other projects — where it can land beside
+those siblings and inherit their requests.
+
+Picking wrong is not a near miss. Run this loop on an auth change and nothing
+mutation-tests the suite; run `gauntlet-loop` on a prompt and you get no
+assumption sweep and no rival framings. The clue is whether the artifact
+executes.
 
 ## Stage 1 · Spec (before any prompt text)
 
@@ -145,9 +157,10 @@ survives is.
 ## Companion app (optional)
 
 This skill is self-contained and needs nothing else. Where it was first written —
-the `Claude-strats` prompt library — a companion browser app at `app/index.html`
-walks the same seven stages, holds the state, enforces the gate, and exports a
-library-format markdown file. If that file is not present in the current project,
-ignore this section: run the stages here and produce the output format below.
+the `Claude-strats` prompt library — a companion browser app walks the same seven
+stages, holds the state, enforces the gate, and exports a library-format markdown
+file. There it lives at `app/index.html`, relative to the repository root. Copied
+into any other project it will not be present; if it is missing, ignore this
+section and run the stages here, producing the output format below.
 
 Use the app when a human is doing the authoring; use this skill when the model is.
