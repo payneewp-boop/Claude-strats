@@ -1,6 +1,6 @@
 ---
 name: prompt-gauntlet
-description: Write, harden, and ship a reusable prompt through an adversarial review loop — spec the requirement, draft, generate rival framings, attack it with distinct lenses, repair with verification, test against acceptance criteria, then gate the release. Use whenever someone wants to write a prompt, improve or debug a prompt that is producing weak or inconsistent output, turn a working prompt into a reusable template or library entry, or review someone else's prompt. Triggers on "write a prompt", "improve this prompt", "the prompt isn't working", "make this a template", "prompt review", "harden this prompt", "why is the output generic". Code and systems go to gauntlet-loop instead, a skill to skill-forge.
+description: Write, harden, and ship a reusable prompt through an adversarial review loop — spec the requirement, draft, generate rival framings, attack it with distinct lenses, repair with verification, test against acceptance criteria, then gate the release. Use whenever someone wants to write a prompt, improve or debug a prompt that is producing weak or inconsistent output, turn a working prompt into a reusable template or library entry, or review someone else's prompt. Triggers on "write a prompt", "improve this prompt", "the prompt isn't working", "make this a template", "prompt review", "harden this prompt", "why is the output generic". Code and systems go to gauntlet-loop instead, a skill to skill-forge; both live in the payneewp-boop/skills repo and are not installed alongside this one.
 ---
 
 # Prompt Gauntlet
