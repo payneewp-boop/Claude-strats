@@ -21,12 +21,18 @@ Every tool file carries all six sections: what it does, inputs, prompt, output, 
 pairs with. Mechanically checkable.
 
 ```bash
+fail=0
 for f in $(find docs -name '*.md' ! -name GAUNTLET.md ! -name CLAUDE-CODE-SKILLS.md ! -path 'docs/framework/*' | sort); do
-  for s in "## What it does" "## Inputs you need" "## Prompt" "## Quality bar" "## Pairs with"; do
-    grep -q "^$s" "$f" || echo "$f missing $s"
+  for s in "## What it does" "## Inputs you need" "## Prompt" "## Output" "## Quality bar" "## Pairs with"; do
+    grep -q "^$s" "$f" || { echo "$f missing $s"; fail=1; }
   done
 done
+exit $fail
 ```
+
+(`## Output` matches the heading "Output you should get". `exit` makes a missing section a
+failing status instead of a line of text above a success; run it as `bash -c '<script>'` or
+paste it into a script file.)
 
 ## Round 2 — Thin input
 
@@ -84,10 +90,10 @@ least one other tool, and have somewhere to go.
 python3 - <<'EOF'
 import re,glob,os,collections
 out=collections.defaultdict(set)
-for f in glob.glob('docs/*/*.md'):
-    if f.endswith('GAUNTLET.md'): continue
+for f in glob.glob('docs/[0-9]-*/*.md'):   # tool files only; docs/framework/ has no Pairs-with
     n=os.path.basename(f).split('-')[0]
-    sec=open(f).read().split('## Pairs with')[1]
+    parts=open(f).read().split('## Pairs with')
+    sec=parts[1] if len(parts)>1 else ''
     out[n]|=set(re.findall(r'\]\([^)]*?(\d\d)-[\w-]+\.md\)', sec))
 alln=sorted(out); inb=collections.defaultdict(set)
 for a,bs in out.items():
