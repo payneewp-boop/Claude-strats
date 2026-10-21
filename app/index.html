@@ -229,11 +229,40 @@ const EXAMPLE = {
   challenge:"Should it exist? Yes, but its boundaries were wrong on first writing. It overlapped 04 Fact Base — both were assembling numbers — so the fact-assembly work was pushed entirely into 04 and this tool now assumes it as an input. The remaining question was whether diagnosis and constraint-finding should be one tool; they should not, because 07 needs this tool's output as evidence and a combined prompt produced a constraint claim before the performance decomposition supported it. Kept, narrowed, with 04 named as the upstream dependency."
 };
 
+/* Turns parsed JSON into a complete state, or throws. Anything the screens call
+   .trim() / .map() / .filter() on has to be the right type, so a file that parses
+   but is the wrong shape is refused here, before it can replace what is on screen. */
+function mergeState(parsed){
+  const b=BLANK(), bad=(what)=>{ throw new Error("bad state: "+what); };
+  if(!parsed || typeof parsed!=="object" || Array.isArray(parsed)) bad("not an object");
+  const out=Object.assign(b, parsed);
+  for(const k of ["spec","draft","framings"]){
+    const base=BLANK()[k], got=parsed[k];
+    if(got!==undefined && (got===null || typeof got!=="object" || Array.isArray(got))) bad(k);
+    out[k]=Object.assign(base, got||{});
+    for(const f of Object.keys(base)) if(typeof out[k][f]!=="string") bad(k+"."+f);
+  }
+  for(const k of ["title","challenge"]) if(typeof out[k]!=="string") bad(k);
+  if(typeof out.stage!=="number" || !isFinite(out.stage)) bad("stage");
+  for(const k of ["sc","findings","tests","passes","ticks"]) if(!Array.isArray(out[k])) bad(k);
+  const str=(o,keys,what)=>{ if(!o||typeof o!=="object") bad(what); for(const f of keys) if(typeof o[f]!=="string") bad(what+"."+f); };
+  out.sc.forEach(x=>str(x,["id","text","trace"],"sc"));
+  out.findings.forEach(x=>str(x,["id","lens","evidence","impact","severity","fix","verification","status"],"finding"));
+  out.tests.forEach(x=>str(x,["sc","input","expected","actual","result"],"test"));
+  out.passes.forEach(x=>{ if(!x||!Array.isArray(x.lenses)) bad("pass"); });
+  if(!out.ticks.every(x=>typeof x==="string")) bad("ticks");
+  return out;
+}
+
 let S = load();
 
 function load(){
-  try{ const r = localStorage.getItem("prompt-gauntlet");
-    if(r){ return Object.assign(BLANK(), JSON.parse(r)); } }catch(e){}
+  let raw=null;
+  try{ raw = localStorage.getItem("prompt-gauntlet");
+    if(raw){ return mergeState(JSON.parse(raw)); } }catch(e){
+    /* Starting fresh and then saving would overwrite the only copy, so keep it. */
+    try{ if(localStorage.getItem("prompt-gauntlet.unreadable")===null) localStorage.setItem("prompt-gauntlet.unreadable", raw); }catch(e2){}
+  }
   return BLANK();
 }
 let saveTimer=null;
@@ -510,7 +539,15 @@ function nextId(list,pre){
   return pre+String(n).padStart(2,"0");
 }
 function addSC(){ S.sc.push({id:nextId(S.sc,"SC-"),text:"",trace:""}); save(); render(); }
-function delSC(i){ S.sc.splice(i,1); save(); render(); }
+function delSC(i){
+  /* Ids are reused (nextId takes the first free one), so tests still pointing at a
+     deleted criterion would be inherited by whatever criterion gets that id next
+     and the gate would call it tested. Unlink them; the tests themselves stay. */
+  const gone=S.sc[i] && S.sc[i].id;
+  S.sc.splice(i,1);
+  if(gone) S.tests.forEach(t=>{ if(t.sc===gone) t.sc=""; });
+  save(); render();
+}
 function addFinding(){ S.findings.push({id:nextId(S.findings,"F-"),lens:LENSES[0][0],evidence:"",impact:"",
   severity:"medium",fix:"",verification:"",status:"OPEN"}); save(); render(); }
 function delFinding(i){ S.findings.splice(i,1); save(); render(); }
@@ -541,8 +578,14 @@ function exportJSON(){ dl(slug(S.title)+"-gauntlet.json", JSON.stringify(S,null,
 function importJSON(inp){
   const f=inp.files[0]; if(!f) return;
   const r=new FileReader();
-  r.onload=()=>{ try{ S=Object.assign(BLANK(),JSON.parse(r.result)); save(); render(); }
-    catch(e){ alert("That file could not be read as gauntlet state."); } };
+  r.onload=()=>{
+    let next;
+    try{ next=mergeState(JSON.parse(r.result)); }
+    catch(e){ alert("That file could not be read as gauntlet state."); return; }
+    /* Show it before keeping it: if it cannot be drawn, nothing is replaced or saved. */
+    const prev=S; S=next;
+    try{ render(); save(); }
+    catch(e){ S=prev; render(); alert("That file could not be read as gauntlet state."); } };
   r.readAsText(f); inp.value="";
 }
 function exportMD(){
