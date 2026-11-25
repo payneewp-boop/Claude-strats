@@ -1,0 +1,7 @@
+# Guard against accidentally committing local secrets, keys, and runtime state to this public repo.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.state/
