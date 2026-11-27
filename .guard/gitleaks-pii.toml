@@ -14,6 +14,7 @@ regexTarget = "line"
 regexes = ['''guard:allow|gitleaks:allow''']
 
 [[rules.allowlists]]
+regexTarget = "match"
 regexes = ['''users\.noreply\.github\.com''', '''noreply@anthropic\.com''', '''@example\.(com|org|net)''', '''@localhost''']
 
 [[rules]]
